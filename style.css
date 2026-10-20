@@ -1,0 +1,77 @@
+/* Estilos Globais */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ajustes do Carrossel */
+.carousel-item {
+  height: 420px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.70);
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+/* Cards do Catálogo */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Foto do Autor */
+.author-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
+
+/* Imagem Principal de Detalhes */
+.detail-main-img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 280px;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+}
